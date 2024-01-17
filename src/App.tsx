@@ -1,39 +1,29 @@
-import { useState, useEffect} from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from "./components/sidebar/Sidebar";
+import Dashboard from "./components/pages/Dashboard";
+import Favorites from "./components/pages/Favorites";
+import Header from "./components/header/Header.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function App() {
-    const [theme, setTheme] = useState<string>();
-
-    useEffect(() => {
-        if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme("dark");
-        }
-        else {
-            setTheme("light");
-        }
-    }, []);
-
-    useEffect(() => {
-        if(theme === "dark")
-        {
-            document.documentElement.classList.add("dark");
-        }
-        else
-        {
-            document.documentElement.classList.remove("dark");
-        }
-    }, [theme]);
-
-    const handleThemeSwitch = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    }
-
-  return (
-      <div className={'h-screen bg-white dark:bg-black'}>
-          <button className={'bg-blue-600 p-4'} onClick={handleThemeSwitch}>
-            Dark mode
-          </button>
-      </div>
-  )
+    return (
+        <Router>
+                <div className={'flex h-screen bg-white dark:bg-black'}>
+                    <Sidebar />
+                    <div className="w-full h-full flex flex-col justify-between">
+                        <Header />
+                        <div className={'bg-gray-300 dark:bg-gray-900 p-6 w-full'}>
+                            <Routes>
+                                <Route path="/" element={<Dashboard />} />
+                                <Route path="/favorites" element={<Favorites />} />
+                            </Routes>
+                        </div>
+                        <Footer />
+                    </div>
+                </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;
