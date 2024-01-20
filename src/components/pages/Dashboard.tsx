@@ -1,39 +1,23 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import MusicProps from "../../types/MusicProps.ts";
 import Card from "../shared/Card.tsx";
-
-const playlist: MusicProps[] = [
-    {
-        id: '1',
-        title: 'Cruel Summer',
-        category: 'pop',
-        author: 'Taylor Swift',
-        lyrics: '',
-        publishedDate: '20/06/2023',
-        image: 'https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647'
-    },
-    {
-        id: '2',
-        title: 'Blank Space',
-        category: 'pop',
-        author: 'Taylor Swift',
-        lyrics: '',
-        publishedDate: '20/06/2023',
-        image: 'https://cdns-images.dzcdn.net/images/cover/68b4e986958b17f05b062ffa8d7ae114/350x350.jpg'
-    },
-    {
-        id: '3',
-        title: 'Style',
-        category: 'pop',
-        author: 'Taylor Swift',
-        lyrics: '',
-        publishedDate: '20/06/2023',
-        image: 'https://cdns-images.dzcdn.net/images/cover/68b4e986958b17f05b062ffa8d7ae114/350x350.jpg'
-    },
-];
+import musicsData from "../../data/musics.json";
 
 const Dashboard: React.FC = () => {
-    const [data, setData] = useState<MusicProps[]>(playlist);
+    const [data, setData] = useState<MusicProps[]>([]);
+    useEffect(() => {
+        // Simula uma requisição assíncrona (ex: API call)
+        const fetchData = async () => {
+            try {
+                // Neste exemplo, estamos usando os dados diretamente do arquivo importado
+                setData(musicsData);
+            } catch (error) {
+                console.error("Erro ao buscar dados:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div className={'flex flex-wrap'}>
