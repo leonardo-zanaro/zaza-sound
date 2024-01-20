@@ -13,7 +13,7 @@ function App() {
                     <Sidebar />
                     <div className="w-full h-full flex flex-col justify-between">
                         <Header />
-                        <div className={'bg-gray-300 dark:bg-gray-900 p-6 w-full'}>
+                        <div className={'h-full dark:bg-gray-900 p-6 w-full'}>
                             <Routes>
                                 <Route path="/" element={<Dashboard />} />
                                 <Route path="/favorites" element={<Favorites />} />

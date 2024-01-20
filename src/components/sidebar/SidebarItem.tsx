@@ -19,7 +19,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ label, icon: Icon, url }) => 
     };
 
     return (
-        <li className={`flex items-center justify-start w-full m-0 p-3 ${isActive ? "text-emerald-500" : "text-neutral-700 dark:text-gray-700"}`} onClick={handleClick}>
+        <li className={`flex items-center justify-start w-full m-0 p-3 ${isActive ? "text-violet-700" : "text-neutral-700 dark:text-gray-700"}`} onClick={handleClick}>
             <span className="icon">
                 <Icon />
             </span>

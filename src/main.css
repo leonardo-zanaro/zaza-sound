@@ -19,6 +19,11 @@ html {
     --radius: 0.25rem;
 }
 
+::selection {
+    background-color: #6d28d9;
+    color: #fff;
+}
+
 body,
 input,
 textarea,
