@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarItem from "./SidebarItem.tsx";
-import {FaHeart, FaHome} from "react-icons/fa";
+import {FaCompass, FaHeart, FaHome} from "react-icons/fa";
 
 type SidebarProps = {
 
@@ -8,7 +8,7 @@ type SidebarProps = {
 
 const Sidebar: React.FC<SidebarProps> = () => {
     const sidebarItems= [
-        {id: 1, label: 'Dashboard', icon: FaHome, url: '/' },
+        {id: 1, label: 'Explorar', icon: FaCompass, url: '/' },
         {id: 2, label: 'Favoritos', icon: FaHeart, url: '/favorites'}
     ]
 

@@ -9,7 +9,7 @@ const Card: React.FC<CardProps> = (card: CardProps) => {
     const [visibleButton, setVisibleButton] = useState<boolean>(false)
 
     return(
-        <div className={'p-4 w-2/12 bg-gray-200 dark:bg-gray-700 rounded-xl'} onMouseOver={() => setVisibleButton(true)} onMouseOut={() => setVisibleButton(false)}>
+        <div className={'p-4 w-2/12 bg-gray-200 dark:bg-gray-900 rounded-xl'} onMouseOver={() => setVisibleButton(true)} onMouseOut={() => setVisibleButton(false)}>
             <div className={'flex flex-col'}>
                 <div className={'relative'}>
                     <FavoriteButton visible={visibleButton} id={card.music.id}/>
