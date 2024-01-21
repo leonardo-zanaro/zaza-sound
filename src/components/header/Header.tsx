@@ -1,10 +1,13 @@
 import React from "react";
 import Navigation from "./Naviation.tsx";
 
-const Header: React.FC = () => {
+type HeaderProps = {
+    onSearch: (query: string) => void;
+};
+const Header: React.FC<HeaderProps> = ({onSearch}: HeaderProps) => {
     return (
         <div>
-            <Navigation />
+            <Navigation onSearch={onSearch}/>
         </div>
     );
 };

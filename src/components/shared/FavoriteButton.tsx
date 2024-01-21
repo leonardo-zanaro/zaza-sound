@@ -29,7 +29,7 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = (props: FavoriteButtonProp
     }
 
     return (
-        <div className={`absolute left-1 top-1 transition-all duration-300 opacity-${props.visible ? '100' : '0'} ${favorite ? 'text-red-600' : 'text-gray-700'}`} onClick={() => changeFavorite()}>
+        <div className={`absolute left-1 top-1 transition-all duration-300 cursor-pointer hover:scale-125 opacity-${props.visible ? '100' : '0'} ${favorite ? 'text-red-600' : 'text-gray-700'}`} onClick={() => changeFavorite()}>
             <AiFillHeart />
         </div>
     );

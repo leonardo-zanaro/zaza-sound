@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { FaSearch, FaTimes } from "react-icons/fa";
 
-type InputProps = {};
+type InputProps = {
+    onSearch: (query: string) => void;
+};
 
 const Search: React.FC<InputProps> = (props: InputProps) => {
     const [searchInput, setSearchInput] = useState("");
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setSearchInput(event.target.value);
+        const query = event.target.value;
+        setSearchInput(query);
+        props.onSearch(query);
     };
 
     const handleClearSearch = () => {
         setSearchInput("");
+        props.onSearch("");
     };
 
     return (
