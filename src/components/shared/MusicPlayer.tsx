@@ -11,13 +11,13 @@ const PlayButton: React.FC<MusicPlayerProps> = (props: MusicPlayerProps) => {
         <div className={'absolute bottom-0 w-full bg-white dark:bg-gray-900 h-20 border-t-2 dark:border-gray-700 border-gray-300 text-neutral-500 dark:text-gray-400'}>
             <div className={'flex justify-between items-center h-full py-3 px-6'}>
                 <div className={'px-3 flex'}>
-                    <div className={'hover:bg-gray-950 p-3 rounded-full transition cursor-pointer'}>
+                    <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
                         <FaBackwardStep />
                     </div>
-                    <div className={'hover:bg-gray-950 p-3 rounded-full transition cursor-pointer'}>
+                    <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
                         <FaPlay/>
                     </div>
-                    <div className={'hover:bg-gray-950 p-3 rounded-full transition cursor-pointer'}>
+                    <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
                         <FaForwardStep/>
                     </div>
                 </div>
@@ -32,13 +32,13 @@ const PlayButton: React.FC<MusicPlayerProps> = (props: MusicPlayerProps) => {
                             <h6>Cruel Summer</h6>
                             <small>Taylor Swift</small>
                         </div>
-                        <div className={'hover:bg-gray-950 p-3 rounded-full transition cursor-pointer'}>
+                        <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
                             <FaEllipsisV/>
                         </div>
                     </div>
                 </div>
                 <div className={'px-3 flex'}>
-                    <div className={'hover:bg-gray-950 p-3 rounded-full transition cursor-pointer'}>
+                    <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
                         <FaVolumeHigh  />
                     </div>
                 </div>
