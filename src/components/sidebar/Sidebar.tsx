@@ -14,6 +14,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
     return (
         <div className="w-1/6 p-6 h-screen">
+            <h2 className={'font-black font-sans dark:text-violet-700 text-neutral-700'}>Zaza Sound</h2>
             <ul className={'m-0'}>
                 {sidebarItems.map(item => (
                     <SidebarItem key={item.id} label={item.label} icon={item.icon} url={item.url} />

@@ -5,6 +5,7 @@ import Dashboard from "./components/pages/Dashboard";
 import Favorites from "./components/pages/Favorites";
 import Header from "./components/header/Header.tsx";
 import Footer from "./components/footer/Footer.tsx";
+import MusicPlayer from "./components/shared/MusicPlayer.tsx";
 
 function App() {
     const [searchQuery, setSearchQuery] = useState<string>("");
@@ -27,6 +28,7 @@ function App() {
                         </div>
                         <Footer />
                     </div>
+                    <MusicPlayer visible={true} />
                 </div>
         </Router>
     );
