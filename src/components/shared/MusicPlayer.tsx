@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBackwardStep, FaForwardStep, FaVolumeHigh, FaPlay, FaPause } from "react-icons/fa6";
 import { Howl } from 'howler';
 import { FaEllipsisV } from "react-icons/fa";
+import VolumeControl from "./VolumeControl.tsx";
 
 type MusicPlayerProps = {
     visible: boolean;
@@ -113,7 +114,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = (props: MusicPlayerProps) => {
                 </div>
                 <div className={'px-3 flex'}>
                     <div className={'dark:hover:bg-gray-950 hover:bg-gray-200 p-3 rounded-full transition cursor-pointer'}>
-                        <FaVolumeHigh />
+                        <VolumeControl />
                     </div>
                 </div>
             </div>

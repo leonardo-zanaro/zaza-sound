@@ -20,7 +20,7 @@ function App() {
                     <Sidebar />
                     <div className="w-full h-full flex flex-col justify-between">
                         <Header onSearch={handleSearch} />
-                        <div className={'h-full bg-transparent p-6 w-full'}>
+                        <div className={'h-5/6 bg-transparent p-6 w-full'}>
                             <Routes>
                                 <Route path="/" element={<Dashboard searchQuery={searchQuery} />} />
                                 <Route path="/favorites" element={<Favorites />} />

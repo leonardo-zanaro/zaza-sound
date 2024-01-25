@@ -11,6 +11,8 @@ const Dashboard: React.FC<DashboardProps> = ({ searchQuery }: DashboardProps) =>
     const [data, setData] = useState<MusicProps[]>([]);
     const [filteredData, setFilteredData] = useState<MusicProps[]>([]);
 
+    const [denis, setDenis] = useState<string>("Denis");
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -35,7 +37,7 @@ const Dashboard: React.FC<DashboardProps> = ({ searchQuery }: DashboardProps) =>
     }, [searchQuery]);
 
     return (
-        <div className={'flex flex-wrap'}>
+        <div className={'flex flex-wrap h-full overflow-y-auto'}>
             {filteredData.length > 0 ? (
                 filteredData.map((item, index) => (
                     <Card key={index} music={item} />

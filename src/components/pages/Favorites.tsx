@@ -22,7 +22,7 @@ const Favorites: React.FC = () => {
     }, []);
 
     return (
-        <div className={'flex flex-wrap'}>
+        <div className={'flex flex-wrap h-full overflow-y-auto'}>
             {data !== undefined && data.length > 0 ?
                 data.map((item, index) => (
                     <Card key={index} music={item} />
