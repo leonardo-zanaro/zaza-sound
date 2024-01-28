@@ -5,7 +5,8 @@ type MusicProps = {
     lyrics: string | null | undefined,
     image: string,
     category: string,
-    publishedDate: string
+    publishedDate: string,
+    src: string
 }
 
 export default MusicProps;

@@ -1,6 +1,6 @@
-import React from "react";
+import React, {ButtonHTMLAttributes} from "react";
 import {BiPlay} from "react-icons/bi";
-type PlayButtonProps = {
+interface PlayButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     visible: boolean
 }
 

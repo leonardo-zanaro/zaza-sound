@@ -1,29 +1,62 @@
 [
   {
   "id": "1",
-  "title": "Cruel Summer",
-  "category": "pop",
-  "author": "Taylor Swift",
+  "title": "On & On",
+  "category": "Eletronic",
+  "author": "Cartoon, Daniel Levi, Jéja",
   "lyrics": "",
-  "publishedDate": "20/06/2023",
-  "image": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647"
+  "publishedDate": "09/07/2015",
+  "image": "https://linkstorage.linkfire.com/medialinks/images/df98e91f-730c-471b-bfdb-9348b75825fd/artwork-440x440.jpg",
+  "src": "./src/data/sounds/Cartoon, Jéja - On & On (feat. Daniel Levi) [NCS Release].mp3"
 },
   {
     "id": "2",
-    "title": "Blank Space",
-    "category": "pop",
-    "author": "Taylor Swift",
+    "title": "Heroes Tonight (feat. Johnning)",
+    "category": "House",
+    "author": "Janji, Johnning",
     "lyrics": "",
-    "publishedDate": "20/06/2023",
-    "image": "https://cdns-images.dzcdn.net/images/cover/68b4e986958b17f05b062ffa8d7ae114/350x350.jpg"
+    "publishedDate": "09/06/2015",
+    "image": "https://linkstorage.linkfire.com/medialinks/images/b89f7721-6c29-4b24-9eb5-d520be4b9887/artwork-440x440.jpg",
+    "src": "./src/data/sounds/Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3"
   },
   {
     "id": "3",
-    "title": "Style",
-    "category": "pop",
-    "author": "Taylor Swift",
+    "title": "Invincible",
+    "category": "Dubstep",
+    "author": "DEAF KEV",
     "lyrics": "",
-    "publishedDate": "20/06/2023",
-    "image": "https://cdns-images.dzcdn.net/images/cover/68b4e986958b17f05b062ffa8d7ae114/350x350.jpg"
+    "publishedDate": "14/05/2015",
+    "image": "https://linkstorage.linkfire.com/medialinks/images/3c68a217-7e8c-4dbe-8030-2cf6b7c8d754/artwork-440x440.jpg",
+    "src": "./src/data/sounds/DEAF KEV - Invincible [NCS Release].mp3"
+  },
+  {
+    "id": "4",
+    "title": "Why We Lose",
+    "category": "Eletronic",
+    "author": "Cartoon, Coleman Trapp, Jéja",
+    "lyrics": "",
+    "publishedDate": "11/06/2015",
+    "image": "https://linkstorage.linkfire.com/medialinks/images/43e39b02-7a14-4a42-b99c-539150ab5308/artwork-440x440.jpg",
+    "src": "./src/data/sounds/Cartoon, Jéja - Why We Lose (feat. Coleman Trapp) [NCS Release].mp3"
+  },
+  {
+    "id": "5",
+    "title": "We Are",
+    "category": "Trap",
+    "author": "Whales, Jo. Cohen",
+    "lyrics": "",
+    "publishedDate": "21/04/2016",
+    "image": "https://linkstorage.linkfire.com/medialinks/images/7c60c80e-a294-4335-a208-b50f87e3b14a/artwork-440x440.jpg",
+    "src": "./src/data/sounds/Jo Cohen & Sex Whales - We Are [NCS Release].mp3"
+  },
+  {
+    "id": "6",
+    "title": "Lies",
+    "category": "Trap",
+    "author": "Diamond Eyes",
+    "lyrics": "",
+    "publishedDate": "05/01/2024",
+    "image": "https://linkstorage.linkfire.com/medialinks/images/d2155de7-f8cd-4727-9c55-69c891c08659/artwork-440x440.jpg",
+    "src": "./src/data/sounds/Diamond Eyes - Lies [NCS Release].mp3"
   }
 ]

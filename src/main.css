@@ -76,14 +76,6 @@ input[type='checkbox'] {
     margin: 0 0.5rem 0 0;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: var(--color);
-    background: white;
-    box-shadow: 0 0 0 3px var(--color-light);
-}
-
 button {
     display: block;
     cursor: pointer;
@@ -92,15 +84,8 @@ button {
     transition: 0.1s;
     background: var(--color);
     color: var(--color-dark);
-    padding: 0.75em 1.5em;
+    padding: 0.75em;
     margin-bottom: 1rem;
-}
-
-button:hover,
-button:focus {
-    background: var(--color);
-    box-shadow: 0 0 0 3px var(--color-light), 0 0 0 4px var(--color);
-    outline: none;
 }
 
 button:active {
@@ -138,19 +123,6 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-ms-scrollbar {
-    width: 6px;
-}
-
-::-ms-scrollbar-thumb {
-    background-color: #27272a;
-    border-radius: 6px;
-}
-
-::-ms-scrollbar-track {
     background-color: transparent;
 }
 

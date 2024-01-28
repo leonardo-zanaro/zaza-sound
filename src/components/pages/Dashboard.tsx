@@ -11,8 +11,6 @@ const Dashboard: React.FC<DashboardProps> = ({ searchQuery }: DashboardProps) =>
     const [data, setData] = useState<MusicProps[]>([]);
     const [filteredData, setFilteredData] = useState<MusicProps[]>([]);
 
-    const [denis, setDenis] = useState<string>("Denis");
-
     useEffect(() => {
         const fetchData = async () => {
             try {
