@@ -13,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
     ]
 
     return (
-        <div className="w-1/6 p-6 h-screen">
+        <div className="invisible md:w-1/6 md:p-6 md:visible h-screen w-0 p-0">
             <h2 className={'font-black font-sans dark:text-violet-700 text-neutral-700'}>Zaza Sound</h2>
             <ul className={'m-0'}>
                 {sidebarItems.map(item => (

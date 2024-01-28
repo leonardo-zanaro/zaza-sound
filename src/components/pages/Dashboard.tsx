@@ -35,7 +35,7 @@ const Dashboard: React.FC<DashboardProps> = ({ searchQuery }: DashboardProps) =>
     }, [searchQuery]);
 
     return (
-        <div className={'grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-min h-full overflow-y-auto gap-4 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 sm:text-sm md:text-md lg:text-lg'}>
+        <div className={'grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 auto-rows-min h-full overflow-y-auto gap-4 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 sm:text-sm md:text-md lg:text-md'}>
             {filteredData.length > 0 ? (
                 filteredData.map((item, index) => (
                     <Card key={index} music={item} />

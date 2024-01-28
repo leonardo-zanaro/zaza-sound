@@ -25,7 +25,7 @@ function App() {
                         <div className={'h-5/6 bg-transparent p-6 w-full'}>
                             <Routes>
                                 <Route path="/" element={<Dashboard searchQuery={searchQuery} />} />
-                                <Route path="/favorites" element={<Favorites />} />
+                                <Route path="/favorites" element={<Favorites searchQuery={searchQuery} />} />
                             </Routes>
                         </div>
                         <Footer />

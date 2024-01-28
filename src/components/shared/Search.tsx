@@ -25,7 +25,7 @@ const Search: React.FC<InputProps> = (props: InputProps) => {
                 type="text"
                 value={searchInput}
                 onChange={handleInputChange}
-                className={'pl-12 rounded-xl dark:active:bg-dark dark:bg-gray-900 dark:text-white'}
+                className={'w-40 md:w-auto pl-12 rounded-xl dark:active:bg-dark dark:bg-gray-900 dark:text-white'}
             />
             <FaSearch className="absolute top-1/3 left-3 dark:text-white" />
             {searchInput && (

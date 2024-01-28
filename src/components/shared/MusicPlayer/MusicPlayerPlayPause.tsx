@@ -29,21 +29,6 @@ const MusicPlayerPlayPause: React.FC<MusicPlayerPlayPauseProps> = ({onUpdateCurr
         return `${formattedMinutes}:${formattedSeconds}`;
     };
 
-    const startPlayback = async () => {
-        if (!sound || currentMusic?.id !== music?.id) {
-            await initializeAudioContext();
-            setCurrentMusic(music);
-            setIsPlaying(true);
-        } else {
-            if (isPlaying) {
-                sound.pause();
-            } else {
-                sound.play();
-            }
-            setIsPlaying(!isPlaying);
-        }
-    };
-
     useEffect(() => {
         const handleMusicChange = () => {
             if (sound && isPlaying) {
@@ -52,7 +37,7 @@ const MusicPlayerPlayPause: React.FC<MusicPlayerPlayPauseProps> = ({onUpdateCurr
             }
 
             if (music && music !== currentMusicRef.current) {
-                startPlayback();
+                handleClick();
             }
 
             currentMusicRef.current = music;
@@ -73,6 +58,7 @@ const MusicPlayerPlayPause: React.FC<MusicPlayerPlayPauseProps> = ({onUpdateCurr
         try {
             const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
             await audioContext.resume();
+            const content = (music != null ? music.src : '');
 
             const audio: CustomHowl = new Howl({
                 volume: volume / 100,
@@ -86,7 +72,7 @@ const MusicPlayerPlayPause: React.FC<MusicPlayerPlayPauseProps> = ({onUpdateCurr
                     setIsPlaying(true);
                     updateCurrentTime();
                 },
-                src: [music.src],
+                src: [content],
             });
 
             setSound(audio);
