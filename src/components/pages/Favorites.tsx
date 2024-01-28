@@ -22,7 +22,7 @@ const Favorites: React.FC = () => {
     }, []);
 
     return (
-        <div className={'flex flex-wrap h-full overflow-y-auto'}>
+        <div className={'grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-min h-full overflow-y-auto gap-4 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 sm:text-sm md:text-md lg:text-lg'}>
             {data !== undefined && data.length > 0 ?
                 data.map((item, index) => (
                     <Card key={index} music={item} />

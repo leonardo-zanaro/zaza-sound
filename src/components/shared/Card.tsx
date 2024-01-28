@@ -24,23 +24,23 @@ const Card: React.FC<CardProps> = ({ music }: CardProps) => {
 
     return (
         <div
-            className={'p-4 w-2/12 bg-gray-200 dark:bg-gray-900 rounded-xl h-fit'}
+            className={'p-4 w-full h-full bg-gray-200 dark:bg-gray-900 rounded-xl'}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className={'flex flex-col'}>
-                <div className={'relative'}>
+            <div className={'flex flex-col h-full'}>
+                <div className={'relative flex h-5/6 w-full gap-0'}>
                     <FavoriteButton visible={isHovered} id={music.id} />
                     <img
                         src={music.image}
                         alt={music.title}
-                        className={'rounded-lg w-full h-auto'}
+                        className={'rounded-lg w-full'}
                     />
                     <div onClick={handlePlayClick}>
                         <PlayButton visible={isHovered} />
                     </div>
                 </div>
-                <div>
+                <div className={'h-1/6'}>
                     <h6 className={'text-neutral-700 dark:text-white font-semibold'}>
                         {music.title}
                     </h6>
